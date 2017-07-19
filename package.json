@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "koa-hooks",
+        "scope": null,
+        "escapedName": "koa-hooks",
+        "name": "koa-hooks",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      }
+    ],
+    [
+      {
+        "raw": "koa-hooks@latest",
+        "scope": null,
+        "escapedName": "koa-hooks",
+        "name": "koa-hooks",
+        "rawSpec": "latest",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/dreamboad/Yin/quotation-app-service"
+    ]
+  ],
+  "_from": "koa-hooks@latest",
+  "_id": "koa-hooks@0.1.2",
+  "_inCache": true,
+  "_location": "/koa-hooks",
+  "_nodeVersion": "7.6.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/getui2-0.1.1.tgz_1500442700972_0.6026145205833018"
+  },
+  "_npmUser": {
+    "name": "qianzhang",
+    "email": "zq_sdk@163.com"
+  },
+  "_npmVersion": "4.5.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "getui2@latest",
+    "scope": null,
+    "escapedName": "getui2",
+    "name": "getui2",
+    "rawSpec": "latest",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/koa-hooks/-/koa-hooks-0.1.1.tgz",
+  "_shasum": "519dd88ee2635dcd6eb8f2e425e032862f2219a2",
+  "_shrinkwrap": null,
+  "_spec": "koa-hooks@latest",
+  "_where": "/Users/dreamboad/Yin/quotation-app-service",
+  "author": {
+    "name": "qian.zhang"
+  },
+  "dependencies": {
+    "hooks": "^0.3.2"
+  },
+  "description": "koa hooks before after",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "0dde0c5bad53fcb2800b5b824d086f9cce5b2a91",
+    "tarball": "https://registry.npmjs.org/koa-hooks/-/koa-hooks-0.1.1.tgz"
+  },
+  "engines": [
+    "node >= 0.4.7"
+  ],
+  "keywords": [
+    "sdk",
+    "hooks"
+  ],
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "qian.zhang",
+      "email": "zq_sdk@163.com"
+    }
+  ],
+  "name": "koa-hooks",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TIME-GATE/koa-hooks" 
+  },  
+  "scripts": {},
+  "version": "0.2.0"
+}
