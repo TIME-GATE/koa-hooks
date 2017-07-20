@@ -34,7 +34,7 @@
     "tmp": "tmp/getui2-0.1.1.tgz_1500442700972_0.6026145205833018"
   },
   "_npmUser": {
-    "name": "qianzhang",
+    "name": "qian.zhang",
     "email": "zq_sdk@163.com"
   },
   "_npmVersion": "4.5.0",
@@ -73,8 +73,9 @@
     "node >= 0.4.7"
   ],
   "keywords": [
-    "sdk",
-    "hooks"
+    "middlewares",
+    "hooks",
+    "koa api"
   ],
   "main": "index.js",
   "maintainers": [

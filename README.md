@@ -11,7 +11,7 @@
 ```bash
 /** 
  * ./demo_api.js
- * 1 ctx: koa上下文 next: 中间件控制 cb: 回调函数 返回前端信息
+ * 1 ctx: koa上下文 next: 动态中间件控制 cb: 回调函数 返回前端信息
  * 2 执行对应的方法前触发before after进行链式调用 hooks函数命名需要约定含有'before' 'after' 
  * 3 根据返回值data的boolean状态值确定是否终止中间件
  * 4 执行流程: sendMessageCode -> beforeSendMessageInvokeValidate -> beforeSendMessageInvokeValidate -> cb
