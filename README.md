@@ -9,7 +9,8 @@
 ## Examples :
 
 ```bash
-/**
+/** 
+ * ./demo_api.js
  * 1 ctx: koa上下文 next: 中间件控制 cb: 回调函数 返回前端信息
  * 2 执行对应的方法前触发before after进行链式调用 hooks函数命名需要约定含有'before' 'after' 
  * 3 根据返回值data的boolean状态值确定是否终止中间件
@@ -62,9 +63,56 @@ const response = (ctx, data = {}) => {
   ctx.body = {
     code: data.code ? data.code : 0,
     message: data.message ? data.message : '请求成功',
-    data: data.data || {} 
+    data: data.data ? data.data : {} 
   }
 }
+
+/**
+ * app.js
+ */
+const Koa = require('koa')
+const router = require('koa-router')()
+
+const compress = require('koa-compress')
+const session = require('koa-session')
+const bodyParser = require('koa-bodyparser')
+
+const csrf = require('koa-csrf')
+const cors = require('koa-cors')
+
+const demoApi = require('./demo_api')
+
+const app = new Koa()
+
+/**
+ * 请求实例
+ */
+app.use(async (ctx, next) => {
+	await demoApi.sendMessageCode(ctx, next, response)
+	//next()
+})
+
+app.on('error', (err, ctx) => {
+  console.error('server error: \n', err, ctx)
+})
+
+process.on('uncaughtException', (exception) => {
+  console.log('uncaughtException: \n', exception)
+})
+
+process.on('unhandledRejection', (reason) => {
+  console.error('unhandledRejection: \n', reason)
+})
+
+app.listen(process.env.PORT || 3000)
+
+/**
+ * test
+ */
+
+node app.js
+
+curl 127.0.0.1:3000
 ```
 
 ## Contributors
